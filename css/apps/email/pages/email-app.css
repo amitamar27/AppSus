@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.email-app .main {
+    padding-top: 10px;
+    display: flex;
+    max-width: 1020px;
+    margin: auto;
+    height: 100vh;
+    background-color: white;
+}
+
+.email-app .aside {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-app .list {
+    flex: 8;
+    list-style: none;
+}
+
+.email-app .list ul {
+    list-style: none;
+}
+
+.new-email {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .email-app .main {
+        flex-direction: column;
+    }
+    .email-app .aside {
+        flex: 0;
+    }
+}
